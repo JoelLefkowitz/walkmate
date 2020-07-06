@@ -1,4 +1,4 @@
-# Walker
+# Walkmate
 
 Recursivly walk and find files
 
@@ -16,7 +16,7 @@ Recursivly walk and find files
 To install the package from pypi:
 
 ```bash
-pip install walker
+pip install walkmate
 
 ```
 
@@ -49,7 +49,7 @@ We can also search for a specific filename:
 
 ### Docs
 
-Additional details are available in the [full documentation](https://walker.readthedocs.io/en/latest/).
+Additional details are available in the [full documentation](https://walkmate.readthedocs.io/en/latest/).
 
 To generate the documentation locally:
 
@@ -102,15 +102,15 @@ None yet!
 
 <!--- Table links --->
 
-[license]: https://img.shields.io/github/license/joellefkowitz/walker
-[release]: https://img.shields.io/github/v/tag/joellefkowitz/walker
-[pypi_downloads]: https://img.shields.io/pypi/dw/walker
+[license]: https://img.shields.io/github/license/joellefkowitz/walkmate
+[release]: https://img.shields.io/github/v/tag/joellefkowitz/walkmate
+[pypi_downloads]: https://img.shields.io/pypi/dw/walkmate
 
-[pypi]: https://img.shields.io/pypi/v/walker "PyPi"
-[pypi_link]: https://pypi.org/project/walker
+[pypi]: https://img.shields.io/pypi/v/walkmate "PyPi"
+[pypi_link]: https://pypi.org/project/walkmate
 
-[issues]: https://img.shields.io/github/issues/joellefkowitz/walker "Issues"
-[issues_link]: https://github.com/JoelLefkowitz/walker/issues
+[issues]: https://img.shields.io/github/issues/joellefkowitz/walkmate "Issues"
+[issues_link]: https://github.com/JoelLefkowitz/walkmate/issues
 
-[pulls]: https://img.shields.io/github/issues-pr/joellefkowitz/walker "Pull requests"
-[pulls_link]: https://github.com/JoelLefkowitz/walker/pulls
+[pulls]: https://img.shields.io/github/issues-pr/joellefkowitz/walkmate "Pull requests"
+[pulls_link]: https://github.com/JoelLefkowitz/walkmate/pulls
