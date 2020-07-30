@@ -10,7 +10,7 @@ path_guard("../..")
 
 
 project = "walkmate"
-version = "1.2.1"
+version = "1.2.2"
 master_doc = "index"
 author = "Joel Lefkowitz"
 copyright = f"{datetime.datetime.now().year}, {author}"
