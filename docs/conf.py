@@ -2,13 +2,14 @@ import datetime
 import os
 import re
 
-import pypandoc
 from pyimport import path_guard
+
+import pypandoc
 
 path_guard("../..")
 
 
-project = "Walker"
+project = "walkmate"
 version = "1.1.0"
 master_doc = "index"
 author = "Joel Lefkowitz"
@@ -46,12 +47,12 @@ def remove_heading(path) -> None:
 
 # Yummy sphinx theme settings
 html_theme = "yummy_sphinx_theme"
-html_title = "Yummy Cereal"
+html_title = "walkmate"
 static_dir = relpath("../static")
 
 html_favicon = os.path.join(static_dir, "favicon.ico")
 html_theme_options = {
-    "github_url": "JoelLefkowitz/yummy-cereal",
+    "github_url": "JoelLefkowitz/walkmate",
     "navbar_icon": "spin fa-book",
 }
 html_css_files = [os.path.join(static_dir, "styles.css")]
@@ -70,5 +71,5 @@ autodoc_default_flags = ["members", "undoc-members"]
 napoleon_google_docstring = True
 
 # Apidoc settings
-apidoc_module_dir = relpath("../../yummy_cereal")
+apidoc_module_dir = relpath("../../walkmate")
 apidoc_extra_args = ["-e"]

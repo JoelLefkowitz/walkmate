@@ -1,0 +1,47 @@
+package: True
+
+name: walkmate
+version: 1.1.0
+description: Recursivly walk and find files
+
+author: Joel Lefkowitz
+author_email: joellefkowitz@hotmail.com
+author_github: JoelLefkowitz
+
+private: False
+readme_body: |-
+
+  Given a multi-level directory structure:
+
+  ```ascii
+  ├── one.py
+  ├── two.py
+  ├── child/
+  │   ├── three.py
+  ```
+
+  We can list all child files:
+
+  ```python
+  >>> list(get_child_files(root=".", maxdepth=2))
+  ["/one.py", "/two.py", "/child/three.py"]
+  ```
+
+  We can also search for a specific filename:
+
+  ```python
+  >>> list(get_child_files(root=".", maxdepth=2, match_name="three.py"))
+  ["/child/three.py"]
+  ```
+ 
+package_name: walkmate
+
+buildbot_worker_password: "Is this a pigeon?"
+buildbot_database_password: "Is this a pigeon?"
+
+keywords: [file, walk]
+twine_username: joellefkowitz
+python_version: 3.6
+
+console_scripts: []
+install_requires: []

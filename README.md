@@ -1,7 +1,6 @@
-# Walkmate
+# walkmate
 
 Recursivly walk and find files
-
 ### Status
 
 | Source     | Shields                                                        |
@@ -11,16 +10,20 @@ Recursivly walk and find files
 | Downloads  | ![pypi_downloads][pypi_downloads]                              |
 | Raised     | [![issues][issues]][issues_link] [![pulls][pulls]][pulls_link] |
 
-### Installing
+<!--- Table links --->
 
-To install the package from pypi:
+[license]: https://img.shields.io/github/license/JoelLefkowitz/walkmate
+[release]: https://img.shields.io/github/v/tag/JoelLefkowitz/walkmate
+[pypi_downloads]: https://img.shields.io/pypi/dw/walkmate
 
-```bash
-pip install walkmate
+[pypi]: https://img.shields.io/pypi/v/walkmate "PyPi"
+[pypi_link]: https://pypi.org/project/walkmate
 
-```
+[issues]: https://img.shields.io/github/issues/JoelLefkowitz/walkmate "Issues"
+[issues_link]: https://github.com/JoelLefkowitz/walkmate/issues
 
-Alternatively, you can clone the repo and build the package locally.
+[pulls]: https://img.shields.io/github/issues-pr/JoelLefkowitz/walkmate "Pull requests"
+[pulls_link]: https://github.com/JoelLefkowitz/walkmate/pulls
 
 ### Usage
 
@@ -36,16 +39,26 @@ Given a multi-level directory structure:
 We can list all child files:
 
 ```python
-    >>> list(get_child_files(root=".", maxdepth=2))
-    ["/one.py", "/two.py", "/child/three.py"]
+>>> list(get_child_files(root=".", maxdepth=2))
+["/one.py", "/two.py", "/child/three.py"]
 ```
 
 We can also search for a specific filename:
 
 ```python
-    >>> list(get_child_files(root=".", maxdepth=2, match_name="three.py"))
-    ["/child/three.py"]
+>>> list(get_child_files(root=".", maxdepth=2, match_name="three.py"))
+["/child/three.py"]
 ```
+
+### Installing
+
+To install the package from pypi:
+
+```bash
+pip install walkmate
+```
+
+Alternatively, you can clone the repo and build the package locally.
 
 ### Docs
 
@@ -69,6 +82,19 @@ multi-job tests
 
 Additionally, an html report will be saved to the local directory.
 
+### Buildbot
+
+To run the buildbot server:
+
+```bash
+cd ci
+docker-compose up -d
+```
+
+* Builders are configured in master.cfg.
+* Build masters read their configuration from https://github.com/JoelLefkowitz/walkmate/walkmate/ci/master.cfg
+* Worker and database passwords are configured as environment variables
+
 ### Contributing
 
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests.
@@ -86,6 +112,7 @@ bump2version patch
 
 Releases are made on every major change.
 
+
 ### Author
 
 - **Joel Lefkowitz** - _Initial work_ - [Joel Lefkowitz](https://github.com/JoelLefkowitz)
@@ -99,18 +126,3 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ### Acknowledgments
 
 None yet!
-
-<!--- Table links --->
-
-[license]: https://img.shields.io/github/license/joellefkowitz/walkmate
-[release]: https://img.shields.io/github/v/tag/joellefkowitz/walkmate
-[pypi_downloads]: https://img.shields.io/pypi/dw/walkmate
-
-[pypi]: https://img.shields.io/pypi/v/walkmate "PyPi"
-[pypi_link]: https://pypi.org/project/walkmate
-
-[issues]: https://img.shields.io/github/issues/joellefkowitz/walkmate "Issues"
-[issues_link]: https://github.com/JoelLefkowitz/walkmate/issues
-
-[pulls]: https://img.shields.io/github/issues-pr/joellefkowitz/walkmate "Pull requests"
-[pulls_link]: https://github.com/JoelLefkowitz/walkmate/pulls

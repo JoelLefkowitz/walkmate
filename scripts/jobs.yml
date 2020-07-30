@@ -32,9 +32,8 @@ jobs:
 
 routines:
   pre-commit:
-    - lint
-    - comprehensiveTest
     - clean
+    - lint
     - format
 
 meta:

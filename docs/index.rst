@@ -1,7 +1,7 @@
-Walkmate
+walkmate
 ============
 
-Welcome to Walkmate's documentation!
+Welcome to walkmate's documentation!
 
 .. raw:: html
    :file: static/README.html
