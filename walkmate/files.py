@@ -1,5 +1,8 @@
 import os
-from typing import List, Generator, Tuple, Optional
+from typing import Generator
+from typing import List
+from typing import Optional
+from typing import Tuple
 
 FileGenerator = Generator[Tuple[str, List[str]], None, None]
 
