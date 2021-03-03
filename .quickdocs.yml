@@ -1,0 +1,7 @@
+project: walkmate
+version: 1.2.2
+author: Joel Lefkowitz
+verbose_name: Walkmate
+html_title: Walkmate
+github_url: JoelLefkowitz/walkmate
+apidoc_module_dir: walkmate
