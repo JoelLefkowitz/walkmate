@@ -1,8 +1,5 @@
 import os
-from typing import Generator
-from typing import List
-from typing import Optional
-from typing import Tuple
+from typing import Generator, List, Optional, Tuple
 
 FileGenerator = Generator[Tuple[str, List[str]], None, None]
 
@@ -22,7 +19,6 @@ def get_child_files(
         Generator[str, None, None]: Filename generator expression
     """
 
-
     return (
         os.path.join(rel_root, file_name)
         for rel_root, files in walk_child_files(root, max_depth)
@@ -31,7 +27,9 @@ def get_child_files(
     )
 
 
-def walk_child_files(root: str, max_depth: Optional[int] = None) -> FileGenerator:
+def walk_child_files(
+    root: str, max_depth: Optional[int] = None
+) -> FileGenerator:
     """
     Recursivly walks the file tree up to the max depth
 
@@ -41,7 +39,7 @@ def walk_child_files(root: str, max_depth: Optional[int] = None) -> FileGenerato
 
     Yields:
         Iterator[FileGenerator]: Tuple of the relative root and files at the current depth
-    """  
+    """
     for rel_root, dirs, files in os.walk(root, topdown=True):
 
         if max_depth:

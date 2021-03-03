@@ -1,6 +1,6 @@
 # Walkmate
 
-Recursivly walk and find files
+Recursively walk and find files.
 
 ## Status
 

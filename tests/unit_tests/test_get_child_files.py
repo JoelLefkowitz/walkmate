@@ -6,10 +6,10 @@ def test_get_child_files():
     assert all_files == [
         "tests/fixtures/mock/one.py",
         "tests/fixtures/mock/two.py",
-        "tests/fixtures/mock/child/three.py"
+        "tests/fixtures/mock/child/three.py",
     ]
 
-    matches = list(get_child_files("tests/fixtures/mock", 2, "three.py"))
-    assert matches == [
-        "tests/fixtures/mock/child/three.py"
-    ]
+    matches = list(
+        get_child_files("tests/fixtures/mock", 2, "three.py")
+    )
+    assert matches == ["tests/fixtures/mock/child/three.py"]
