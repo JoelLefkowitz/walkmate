@@ -1,0 +1,51 @@
+output_dir: .
+
+clear_top_level: true
+logical_grouping: true
+
+collections:
+  - common
+  - python
+
+loader_paths:
+  - docs
+
+render_context:
+  project:
+    project_name: walkmate
+    version: 1.2.2
+
+    verbose_name: walkmate
+    description: Recursively walk and find files.
+
+    repository: https://github.com/JoelLefkowitz/walkmate
+    codacy_id: ea0bf72352d142519296cfcd0ce026ce
+
+    inserts:
+      - usage.md
+
+  author:
+    author: Joel Lefkowitz
+    author_email: joellefkowitz@hotmail.com
+    author_github_handle: joellefkowitz
+
+  package:
+    is_pypi_package: true
+    package_name: walkmate
+
+    install_requires:
+      - dataclasses
+
+  portfolio:
+    is_portfolio: true
+    status_level: 5
+
+    languages:
+      - Python
+
+    paradigms:
+      - Object oriented programming
+
+  public_keys:
+    travis_pypi: S+HpcuYUiGrOMQb9ps0JDxcCaDZsZBEFpnVuTQOA2OoPVg6jFhtK+7jTQXLfS5vsjE4CmBScDU1N76Nlv9r+0zVJbPwyP6t7FohUTLLDLCZWQjTNo/WO/rnpaCp5yknhB1SiffU6ubszjmt8Mfo3oygsH3WHfgKDYayhlG9z/KXeMOJkMaFXZ5U3t9bBC26YhksJ2IDJCeU9Ox3RkX5tXgrtYEThZVAk6bnxvyJhECdMgUE/YWP2IEx1tFxfsz4AF1e2cEi+zJF72taJF5s/oG1hnrQnVzVcl3aHRvmo4vReMpsf6I7GiyLSOd6+PeuxEuZk7mCOmghnTQKsgeHy6KXqBdkIGEDtdAuLbsj6/I2mla2+mOmWz7hVzMSciLpFt75vxH6rU/42feRJCdC68brTc9XHvioRz6YGn5m0IePpCHp7+1g302J27xvc0MVFPoBmQ+/BgoHiu6OXrs7CKWF8I7HYufOLctFVgwKSk3IDj3gfb3NGWPGQRLU+l5MqRjfx/7qF4F43gCiKd5mRsqmXyPyCR8bafnedybpKWAPENhVDqbx8UkPV70/X4ZmavII4dgJGtdHLWKsnpcMJqNLG3qXcOwqKc40kV7ndWtZl03UWxf15qSBvzJ4ybgGqHnsIuMbMPR9S75ys8ePFtHUxiNjBlQW4yycsFlfcs+0=
+    travis_codacy: bCLv+9in0yJGCZpbxe1GuJy1klpaszlzH61G5xEruaEtUbBDFccrkEYjjM4OcvybG0iky7QQXbKPaKGJ387gOMAcwxBTHOFC3jFIrZ3v7RKQMfq3fy8AYNWYPsPvK5CRhyKG+0oUxfZYYX94NwJADKu83WbtrfXyIGkubLL4hx2iQIV6rw7sT/68Opuw+nCR4wAMXnFE/9JIXBCxjRLpmCFcdpMmayaO3DKSqi20E2SrAM4U5CXbCmlBiKGxdH43ZSW600HwTcAoCNjoBSLbaePw/Ghd70kjptNPKUV3d9Z4KrS0mq+/8uX+5bwBs22icei1gZc7yLdq4jYGcKxGqUxZF0mUFL56K1+QRD1JJT5smuXCgdX9d6NGqtSX1uBotKZkRuyDp5f9GNYtkaALAp0fZdU6kK8uzi0lpzE84ojNE7Yi+gMpJvKc2GktcPdDhfGeLRsFT58bcicUbElnQJncTl9G8KcLdsww+yp1+MCO7l9ZWxjex3DJh0Pk1d+URrnU6JnAd1zbs+GXbVycCSzw6DT010cqo2C491IVSizoDU7twt1fjaU+EKrK5cVk7meluQ8YV0nOH6yVv9BwJyznXyjr6J9j+qaMle5jRqTiGiNnxkRN4+4mvakG55EbYWi7Tw5cLNp9FetCrZ2EV4ivX2w6szlySFlHNMy70kg=

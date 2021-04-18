@@ -1,4 +1,3 @@
-\__pycache__/
 __pypackages__/
 !.vscode/extensions.json
 !.vscode/launch.json
@@ -12,7 +11,6 @@ __pypackages__/
 .dmypy.json
 .DS_Store
 .eggs/
-.env
 .history/*
 .hypothesis/
 .idea/
@@ -29,6 +27,7 @@ __pypackages__/
 .sass-cache/
 .scrapy
 .settings/
+.spago/
 .spyderproject
 .spyproject
 .test_report.*
@@ -39,6 +38,8 @@ __pypackages__/
 *.cover
 *.egg
 *.egg-info/
+*.env
+*.env
 *.launch
 *.log
 *.manifest
@@ -49,18 +50,21 @@ __pypackages__/
 *.sage.py
 *.so
 *.spec
+*.sqlite3
 *.sublime-workspace
+*.tfstate
+*.tfstate.backup
 *$py.class
+\__pycache__/
 bazel-out/
 build/
 celerybeat-schedule/
 celerybeat.pid
 chrome-profiler-events*.json
 connect.lock
+cov.xml
 coverage.xml
 coverage/
-db.sqlite3
-db.sqlite3-journal
 develop-eggs/
 dist/
 dmypy.json
@@ -77,11 +81,11 @@ lib/
 lib64/
 libpeerconnection.log
 local_settings.py
-MANIFEST.*
 node_modules/
 nosetests.xml
 npm-debug.log
 out-tsc/
+output/
 parts/
 pip-delete-this-directory.txt
 pip-log.txt
@@ -91,7 +95,9 @@ sdist/
 share/python-wheels/
 site/
 speed-measure-plugin*.json
+sqlite3
 target/
+terraform/.terraform/
 testem.log
 Thumbs.db
 tmp/
@@ -101,4 +107,3 @@ venv.bak/
 venv/
 wheels/
 yarn-error.log
-
