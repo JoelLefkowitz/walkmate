@@ -5,6 +5,7 @@
   },
   "metadata": {
     "documentation": "https://walkmate.readthedocs.io/en/latest",
+    "packages": "https://pypi.org/project/walkmate",
     "languages": [
       "Python"
     ],
