@@ -20,6 +20,11 @@
       "Functional"
     ],
     "lifecycle": "Production/Stable",
-    "publisher": "PyPI"
+    "publisher": "PyPI",
+    "topics": [
+      "filesystem",
+      "traverse",
+      "walk"
+    ]
   }
 }
