@@ -1,10 +1,16 @@
 {
+  "name": "walkmate",
+  "description": "Recursively walk and find files.",
+  "private": false,
+  "version": "1.2.2",
+  "homepage": "https://github.com/JoelLefkowitz/walkmate",
+  "repository": "https://github.com/JoelLefkowitz/walkmate",
   "devDependencies": {
     "grunt": "^1.3.0",
     "grunt-cli": "^1.3.0"
   },
   "metadata": {
-    "documentation": "https://walkmate.readthedocs.io/en/latest",
+    "documentation": "https://walkmate.readthedocs.io",
     "packages": "https://pypi.org/project/walkmate",
     "languages": [
       "Python"
