@@ -1,30 +1,20 @@
 {
-  "name": "walkmate",
-  "description": "Recursively walk and find files.",
-  "private": false,
-  "version": "1.2.2",
-  "homepage": "https://walkmate.readthedocs.io",
-  "repository": "https://github.com/JoelLefkowitz/walkmate",
-  "devDependencies": {
-    "grunt": "^1.3.0",
-    "grunt-cli": "^1.3.0"
-  },
   "metadata": {
-    "documentation": "https://walkmate.readthedocs.io",
-    "packages": "https://pypi.org/project/walkmate",
+    "publisher": "PyPI",
     "languages": [
       "Python"
     ],
     "frameworks": [],
-    "paradigms": [
-      "Functional"
-    ],
-    "lifecycle": "Production/Stable",
-    "publisher": "PyPI",
-    "topics": [
-      "filesystem",
-      "traverse",
-      "walk"
-    ]
+    "paradigms": [],
+    "lifecycle": "Alpha"
+  },
+  "scripts": {
+    "postinstall": "husky install"
+  },
+  "devDependencies": {
+    "cspell": "^8.0.0",
+    "eslint": "^8.34.0",
+    "husky": "^9.0.0",
+    "prettier": "^3.0.0"
   }
 }
