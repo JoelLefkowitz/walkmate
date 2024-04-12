@@ -1,6 +1,9 @@
 node_modules/
 venv/
 
+build/
+dist/
+
 *.egg-info/
 *.o
 *.pyc
