@@ -6,6 +6,8 @@ dist/
 
 *.egg-info/
 *.o
+.coverage
+coverage.*
 *.pyc
 
 .DS_Store
