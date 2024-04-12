@@ -1,6 +1,6 @@
 import os
 import re
-from typing import Generator, List, Optional, Tuple, Iterator
+from typing import Generator, List, Optional, Tuple
 
 
 def step(
@@ -36,22 +36,22 @@ def step(
 
 
 def tree(
-    root: str, depth: Optional[int] = None, regex: Optional[str] = None
-) -> Iterator[str]:
+    root: str, regex: Optional[str] = None, depth: Optional[int] = None
+) -> List[str]:
     """
     Traverse the file tree
 
     Args:
         root (str): The root directory.
-        depth (Optional[int], optional): The maximum depth. Defaults to None.
         regex (Optional[str], optional): The regex to match. Defaults to None.
+        depth (Optional[int], optional): The maximum depth. Defaults to None.
 
     Returns:
         Iterator[str]: An iterator containing the file paths
     """
-    return (
+    return [
         os.path.join(folder, file)
         for folder, files in step(root, depth)
         for file in files
         if regex is None or re.search(regex, file)
-    )
+    ]

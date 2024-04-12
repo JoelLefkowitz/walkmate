@@ -9,4 +9,4 @@ def test_step():
 
 
 def test_tree():
-    assert list(tree("test/fixtures", regex=r"two\.py$")) == ["test/fixtures/two.py"]
+    assert tree("test/fixtures", r"two\.py$") == ["test/fixtures/two.py"]
