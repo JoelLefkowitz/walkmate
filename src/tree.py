@@ -1,5 +1,6 @@
 import os
 import re
+from math import floor
 from typing import Generator, List, Optional, Tuple
 
 
@@ -18,16 +19,11 @@ def step(
         the folder and child files
     """
     for folder, subdirs, files in os.walk(root, topdown=True):
-        if depth:
+        if depth == 0:
+            continue
+
+        if depth == floor(len(os.path.relpath(root, folder)) / 2) + 1:
             subdirs.clear()
-
-            paths = [
-                os.path.relpath(f.path, root) for f in os.scandir(folder) if f.is_dir()
-            ]
-
-            subdirs.extend(
-                [os.path.basename(f) for f in paths if len(f.split(os.sep)) <= depth]
-            )
 
         if "__pycache__" in subdirs:
             subdirs.remove("__pycache__")
@@ -36,22 +32,30 @@ def step(
 
 
 def tree(
-    root: str, regex: Optional[str] = None, depth: Optional[int] = None
+    root: str,
+    include: Optional[str] = None,
+    exclude: Optional[List[str]] = None,
+    depth: Optional[int] = None,
 ) -> List[str]:
     """
     Traverse the file tree
 
     Args:
         root (str): The root directory.
-        regex (Optional[str], optional): The regex to match. Defaults to None.
+        include (Optional[str], optional): A regex to include. Defaults to None.
+        exclude (Optional[List[str]], optional): Regexes to exclude. Defaults to None.
         depth (Optional[int], optional): The maximum depth. Defaults to None.
 
     Returns:
         Iterator[str]: An iterator containing the file paths
     """
+    if exclude is None:
+        exclude = []
+
     return [
         os.path.join(folder, file)
         for folder, files in step(root, depth)
         for file in files
-        if regex is None or re.search(regex, file)
+        if (include is None or re.search(include, file))
+        and not any(re.search(regex, file) for regex in exclude)
     ]

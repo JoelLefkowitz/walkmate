@@ -13,21 +13,37 @@ pip install walkmate
 Given a multi-level directory structure:
 
 ```ascii
+.
 ├── one.py
 ├── two.py
-├── child/
-│   ├── three.py
+└── child
+    └── three.py
 ```
 
-We can list the files tree:
+We can list all the files tree:
 
 ```python
->>> list(tree("test/fixtures"))
+>>> tree("test/fixtures")
 ["one.py", "two.py", "child/three.py"]
+```
 
->>> list(tree("test/fixtures", depth=1))
+Filter with a regex:
+
+```python
+>>> tree("test/fixtures", r"one\.py$")
+["one.py"]
+```
+
+Add exlude patterns too:
+
+```python
+>>> tree("test/fixtures", r"\.py$", [r"one\.py$"])
+["two.py", "child/three.py"]
+```
+
+Specify the maximum depth:
+
+```python
+>>> tree("test/fixtures", depth=1)
 ["one.py", "two.py"]
-
->>> list(tree("test/fixtures", regex=r"two\.py$"))
-["two.py"]
 ```
