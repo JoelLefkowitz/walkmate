@@ -14,11 +14,13 @@ license = { file = "LICENSE.md" }
 readme = "README.md"
 
 authors = [{ name = "Joel Lefkowitz", email = "joellefkowitz@hotmail.com" }]
+
 classifiers = [
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3.6",
     "Programming Language :: Python :: 3.7",
     "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
 ]
 
 keywords = ["filesystem", "traverse", "tree", "walk"]
@@ -34,3 +36,8 @@ packages = ["src"]
 
 [tool.hatch.build.targets.wheel.sources]
 "src" = "walkmate"
+
+[tool.thx.jobs]
+format = ["black . ", "isort . --no-sections"]
+lint = ["pylint src --disable=C0114,C0115,C0116,C0411", "mypy -m src"]
+test = ["pytest"]
