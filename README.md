@@ -8,7 +8,7 @@ Traverse the file tree.
 ![Quality](https://img.shields.io/codacy/grade/ea0bf72352d142519296cfcd0ce026ce)
 ![Coverage](https://img.shields.io/codacy/coverage/ea0bf72352d142519296cfcd0ce026ce)
 
-## Installation
+## Installing
 
 ```bash
 pip install walkmate
