@@ -2,7 +2,7 @@
 
 Traverse the file tree.
 
-![Review](https://img.shields.io/github/actions/workflow/status/JoelLefkowitz/walkmate/review.yml)
+![Review](https://img.shields.io/github/actions/workflow/status/JoelLefkowitz/walkmate/review.yaml)
 ![Version](https://img.shields.io/pypi/v/walkmate)
 ![Downloads](https://img.shields.io/pypi/dw/walkmate)
 ![Quality](https://img.shields.io/codacy/grade/ea0bf72352d142519296cfcd0ce026ce)
